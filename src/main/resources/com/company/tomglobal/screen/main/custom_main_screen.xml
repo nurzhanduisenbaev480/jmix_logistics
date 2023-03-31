@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<window xmlns="http://jmix.io/schema/ui/window"
+        caption="msg://caption">
+    <layout expand="workArea">
+        <hbox id="header"
+              expand="mainMenu"
+              margin="false;true;false;true"
+              stylename="jmix-app-menubar"
+              spacing="true"
+              width="100%">
+            <image id="logoImage"
+                   align="MIDDLE_CENTER"
+                   scaleMode="SCALE_DOWN"
+                   stylename="app-icon">
+                <resource>
+                    <theme path="branding/app-icon-menu.svg"/>
+                </resource>
+            </image>
+            <menu id="mainMenu"
+                  align="MIDDLE_LEFT"/>
+            <textField id="searchField" responsive="true" height="AUTO" stylename="inline-icon"
+                       icon="ENTITYPICKER_OPEN"/>
+            <userIndicator id="userIndicator"
+                           align="MIDDLE_LEFT"/>
+            <hbox id="mainButtonsBox"
+                  align="MIDDLE_LEFT"
+                  stylename="jmix-main-buttons">
+                <logoutButton id="logoutButton"
+                              description="msg://logoutBtnDescription"
+                              icon="SIGN_OUT"/>
+            </hbox>
+        </hbox>
+        <workArea id="workArea"
+                  stylename="jmix-workarea"
+                  width="100%">
+            <initialLayout margin="true"
+                           spacing="true">
+            </initialLayout>
+        </workArea>
+    </layout>
+</window>
